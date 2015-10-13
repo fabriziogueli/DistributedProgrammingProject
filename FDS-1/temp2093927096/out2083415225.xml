@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FlightMonitor SYSTEM "flightInfo.dtd">
+<FlightMonitor>
+<Aircrafts>
+<Aircraft model="A320">
+<Seats id_seat="15C"/>
+<Seats id_seat="15B"/>
+<Seats id_seat="15A"/>
+<Seats id_seat="3A"/>
+<Seats id_seat="3B"/>
+<Seats id_seat="3F"/>
+<Seats id_seat="3E"/>
+<Seats id_seat="3D"/>
+<Seats id_seat="3C"/>
+<Seats id_seat="14E"/>
+<Seats id_seat="14F"/>
+<Seats id_seat="14C"/>
+<Seats id_seat="14D"/>
+<Seats id_seat="16B"/>
+<Seats id_seat="16A"/>
+<Seats id_seat="16D"/>
+<Seats id_seat="16C"/>
+<Seats id_seat="2A"/>
+<Seats id_seat="2C"/>
+<Seats id_seat="2B"/>
+<Seats id_seat="2E"/>
+<Seats id_seat="2D"/>
+<Seats id_seat="15D"/>
+<Seats id_seat="15E"/>
+<Seats id_seat="2F"/>
+<Seats id_seat="15F"/>
+<Seats id_seat="17A"/>
+<Seats id_seat="17E"/>
+<Seats id_seat="17D"/>
+<Seats id_seat="17C"/>
+<Seats id_seat="17B"/>
+<Seats id_seat="20A"/>
+<Seats id_seat="9E"/>
+<Seats id_seat="9F"/>
+<Seats id_seat="20E"/>
+<Seats id_seat="9A"/>
+<Seats id_seat="20D"/>
+<Seats id_seat="9B"/>
+<Seats id_seat="20C"/>
+<Seats id_seat="9C"/>
+<Seats id_seat="20B"/>
+<Seats id_seat="9D"/>
+<Seats id_seat="16E"/>
+<Seats id_seat="1F"/>
+<Seats id_seat="20F"/>
+<Seats id_seat="16F"/>
+<Seats id_seat="1E"/>
+<Seats id_seat="1D"/>
+<Seats id_seat="1C"/>
+<Seats id_seat="1B"/>
+<Seats id_seat="1A"/>
+<Seats id_seat="18B"/>
+<Seats id_seat="18A"/>
+<Seats id_seat="18D"/>
+<Seats id_seat="18C"/>
+<Seats id_seat="18F"/>
+<Seats id_seat="18E"/>
+<Seats id_seat="8F"/>
+<Seats id_seat="21B"/>
+<Seats id_seat="8D"/>
+<Seats id_seat="21A"/>
+<Seats id_seat="8E"/>
+<Seats id_seat="21D"/>
+<Seats id_seat="8B"/>
+<Seats id_seat="21C"/>
+<Seats id_seat="8C"/>
+<Seats id_seat="21F"/>
+<Seats id_seat="21E"/>
+<Seats id_seat="8A"/>
+<Seats id_seat="17F"/>
+<Seats id_seat="23C"/>
+<Seats id_seat="7B"/>
+<Seats id_seat="23D"/>
+<Seats id_seat="7A"/>
+<Seats id_seat="23A"/>
+<Seats id_seat="23B"/>
+<Seats id_seat="7F"/>
+<Seats id_seat="7E"/>
+<Seats id_seat="23E"/>
+<Seats id_seat="7D"/>
+<Seats id_seat="23F"/>
+<Seats id_seat="7C"/>
+<Seats id_seat="10F"/>
+<Seats id_seat="10E"/>
+<Seats id_seat="10D"/>
+<Seats id_seat="10C"/>
+<Seats id_seat="24A"/>
+<Seats id_seat="10B"/>
+<Seats id_seat="10A"/>
+<Seats id_seat="19D"/>
+<Seats id_seat="19E"/>
+<Seats id_seat="19F"/>
+<Seats id_seat="19A"/>
+<Seats id_seat="19B"/>
+<Seats id_seat="19C"/>
+<Seats id_seat="22A"/>
+<Seats id_seat="22B"/>
+<Seats id_seat="6A"/>
+<Seats id_seat="22C"/>
+<Seats id_seat="22D"/>
+<Seats id_seat="6C"/>
+<Seats id_seat="22E"/>
+<Seats id_seat="6B"/>
+<Seats id_seat="22F"/>
+<Seats id_seat="6E"/>
+<Seats id_seat="6D"/>
+<Seats id_seat="11E"/>
+<Seats id_seat="6F"/>
+<Seats id_seat="11D"/>
+<Seats id_seat="11F"/>
+<Seats id_seat="11A"/>
+<Seats id_seat="11C"/>
+<Seats id_seat="11B"/>
+<Seats id_seat="5D"/>
+<Seats id_seat="5C"/>
+<Seats id_seat="5B"/>
+<Seats id_seat="5A"/>
+<Seats id_seat="25E"/>
+<Seats id_seat="25F"/>
+<Seats id_seat="13A"/>
+<Seats id_seat="25C"/>
+<Seats id_seat="25D"/>
+<Seats id_seat="12D"/>
+<Seats id_seat="12C"/>
+<Seats id_seat="12B"/>
+<Seats id_seat="12A"/>
+<Seats id_seat="12F"/>
+<Seats id_seat="5E"/>
+<Seats id_seat="12E"/>
+<Seats id_seat="5F"/>
+<Seats id_seat="24F"/>
+<Seats id_seat="4A"/>
+<Seats id_seat="4C"/>
+<Seats id_seat="4B"/>
+<Seats id_seat="24B"/>
+<Seats id_seat="24C"/>
+<Seats id_seat="24D"/>
+<Seats id_seat="14A"/>
+<Seats id_seat="24E"/>
+<Seats id_seat="14B"/>
+<Seats id_seat="13C"/>
+<Seats id_seat="13B"/>
+<Seats id_seat="25B"/>
+<Seats id_seat="13E"/>
+<Seats id_seat="25A"/>
+<Seats id_seat="13D"/>
+<Seats id_seat="4D"/>
+<Seats id_seat="13F"/>
+<Seats id_seat="4E"/>
+<Seats id_seat="4F"/>
+</Aircraft>
+<Aircraft model="B737">
+<Seats id_seat="15C"/>
+<Seats id_seat="15B"/>
+<Seats id_seat="15A"/>
+<Seats id_seat="3A"/>
+<Seats id_seat="3B"/>
+<Seats id_seat="3D"/>
+<Seats id_seat="3C"/>
+<Seats id_seat="14C"/>
+<Seats id_seat="14D"/>
+<Seats id_seat="16B"/>
+<Seats id_seat="16A"/>
+<Seats id_seat="16D"/>
+<Seats id_seat="16C"/>
+<Seats id_seat="2A"/>
+<Seats id_seat="2C"/>
+<Seats id_seat="2B"/>
+<Seats id_seat="2D"/>
+<Seats id_seat="15D"/>
+<Seats id_seat="17A"/>
+<Seats id_seat="17D"/>
+<Seats id_seat="17C"/>
+<Seats id_seat="17B"/>
+<Seats id_seat="20A"/>
+<Seats id_seat="9A"/>
+<Seats id_seat="9B"/>
+<Seats id_seat="20D"/>
+<Seats id_seat="9C"/>
+<Seats id_seat="20C"/>
+<Seats id_seat="9D"/>
+<Seats id_seat="20B"/>
+<Seats id_seat="1D"/>
+<Seats id_seat="1C"/>
+<Seats id_seat="1B"/>
+<Seats id_seat="1A"/>
+<Seats id_seat="18B"/>
+<Seats id_seat="18A"/>
+<Seats id_seat="18D"/>
+<Seats id_seat="18C"/>
+<Seats id_seat="8D"/>
+<Seats id_seat="21B"/>
+<Seats id_seat="21A"/>
+<Seats id_seat="8B"/>
+<Seats id_seat="21D"/>
+<Seats id_seat="8C"/>
+<Seats id_seat="21C"/>
+<Seats id_seat="8A"/>
+<Seats id_seat="7B"/>
+<Seats id_seat="23C"/>
+<Seats id_seat="7A"/>
+<Seats id_seat="23D"/>
+<Seats id_seat="23A"/>
+<Seats id_seat="23B"/>
+<Seats id_seat="7D"/>
+<Seats id_seat="7C"/>
+<Seats id_seat="10D"/>
+<Seats id_seat="10C"/>
+<Seats id_seat="10B"/>
+<Seats id_seat="24A"/>
+<Seats id_seat="10A"/>
+<Seats id_seat="19D"/>
+<Seats id_seat="19A"/>
+<Seats id_seat="19B"/>
+<Seats id_seat="19C"/>
+<Seats id_seat="22A"/>
+<Seats id_seat="6A"/>
+<Seats id_seat="22B"/>
+<Seats id_seat="22C"/>
+<Seats id_seat="6C"/>
+<Seats id_seat="22D"/>
+<Seats id_seat="6B"/>
+<Seats id_seat="6D"/>
+<Seats id_seat="11D"/>
+<Seats id_seat="11A"/>
+<Seats id_seat="11C"/>
+<Seats id_seat="11B"/>
+<Seats id_seat="5D"/>
+<Seats id_seat="5C"/>
+<Seats id_seat="5B"/>
+<Seats id_seat="5A"/>
+<Seats id_seat="13A"/>
+<Seats id_seat="25C"/>
+<Seats id_seat="25D"/>
+<Seats id_seat="12D"/>
+<Seats id_seat="12C"/>
+<Seats id_seat="12B"/>
+<Seats id_seat="12A"/>
+<Seats id_seat="4A"/>
+<Seats id_seat="4C"/>
+<Seats id_seat="4B"/>
+<Seats id_seat="24B"/>
+<Seats id_seat="24C"/>
+<Seats id_seat="14A"/>
+<Seats id_seat="24D"/>
+<Seats id_seat="14B"/>
+<Seats id_seat="13C"/>
+<Seats id_seat="13B"/>
+<Seats id_seat="25B"/>
+<Seats id_seat="25A"/>
+<Seats id_seat="13D"/>
+<Seats id_seat="4D"/>
+</Aircraft>
+<Aircraft model="E170">
+<Seats id_seat="15C"/>
+<Seats id_seat="15B"/>
+<Seats id_seat="15A"/>
+<Seats id_seat="3A"/>
+<Seats id_seat="3B"/>
+<Seats id_seat="7B"/>
+<Seats id_seat="7A"/>
+<Seats id_seat="7D"/>
+<Seats id_seat="7C"/>
+<Seats id_seat="10D"/>
+<Seats id_seat="10C"/>
+<Seats id_seat="10B"/>
+<Seats id_seat="10A"/>
+<Seats id_seat="3D"/>
+<Seats id_seat="3C"/>
+<Seats id_seat="14C"/>
+<Seats id_seat="14D"/>
+<Seats id_seat="16B"/>
+<Seats id_seat="16A"/>
+<Seats id_seat="16D"/>
+<Seats id_seat="16C"/>
+<Seats id_seat="2A"/>
+<Seats id_seat="6A"/>
+<Seats id_seat="6C"/>
+<Seats id_seat="6B"/>
+<Seats id_seat="6D"/>
+<Seats id_seat="11D"/>
+<Seats id_seat="11A"/>
+<Seats id_seat="11C"/>
+<Seats id_seat="11B"/>
+<Seats id_seat="2C"/>
+<Seats id_seat="2B"/>
+<Seats id_seat="2D"/>
+<Seats id_seat="15D"/>
+<Seats id_seat="17A"/>
+<Seats id_seat="17D"/>
+<Seats id_seat="17C"/>
+<Seats id_seat="17B"/>
+<Seats id_seat="5D"/>
+<Seats id_seat="5C"/>
+<Seats id_seat="5B"/>
+<Seats id_seat="5A"/>
+<Seats id_seat="13A"/>
+<Seats id_seat="12D"/>
+<Seats id_seat="12C"/>
+<Seats id_seat="12B"/>
+<Seats id_seat="12A"/>
+<Seats id_seat="9A"/>
+<Seats id_seat="9B"/>
+<Seats id_seat="9C"/>
+<Seats id_seat="9D"/>
+<Seats id_seat="1D"/>
+<Seats id_seat="1C"/>
+<Seats id_seat="1B"/>
+<Seats id_seat="1A"/>
+<Seats id_seat="18B"/>
+<Seats id_seat="18A"/>
+<Seats id_seat="18D"/>
+<Seats id_seat="18C"/>
+<Seats id_seat="4A"/>
+<Seats id_seat="4C"/>
+<Seats id_seat="4B"/>
+<Seats id_seat="14A"/>
+<Seats id_seat="14B"/>
+<Seats id_seat="13C"/>
+<Seats id_seat="13B"/>
+<Seats id_seat="8D"/>
+<Seats id_seat="13D"/>
+<Seats id_seat="8B"/>
+<Seats id_seat="4D"/>
+<Seats id_seat="8C"/>
+<Seats id_seat="8A"/>
+</Aircraft>
+<Aircraft model="A318">
+<Seats id_seat="15C"/>
+<Seats id_seat="15B"/>
+<Seats id_seat="15A"/>
+<Seats id_seat="3A"/>
+<Seats id_seat="3B"/>
+<Seats id_seat="28A"/>
+<Seats id_seat="3D"/>
+<Seats id_seat="3C"/>
+<Seats id_seat="14C"/>
+<Seats id_seat="14D"/>
+<Seats id_seat="16B"/>
+<Seats id_seat="26D"/>
+<Seats id_seat="16A"/>
+<Seats id_seat="16D"/>
+<Seats id_seat="16C"/>
+<Seats id_seat="2A"/>
+<Seats id_seat="2C"/>
+<Seats id_seat="2B"/>
+<Seats id_seat="2D"/>
+<Seats id_seat="27A"/>
+<Seats id_seat="15D"/>
+<Seats id_seat="27B"/>
+<Seats id_seat="27C"/>
+<Seats id_seat="27D"/>
+<Seats id_seat="17A"/>
+<Seats id_seat="17D"/>
+<Seats id_seat="17C"/>
+<Seats id_seat="17B"/>
+<Seats id_seat="20A"/>
+<Seats id_seat="9A"/>
+<Seats id_seat="9B"/>
+<Seats id_seat="20D"/>
+<Seats id_seat="9C"/>
+<Seats id_seat="20C"/>
+<Seats id_seat="9D"/>
+<Seats id_seat="20B"/>
+<Seats id_seat="1D"/>
+<Seats id_seat="1C"/>
+<Seats id_seat="1B"/>
+<Seats id_seat="1A"/>
+<Seats id_seat="18B"/>
+<Seats id_seat="18A"/>
+<Seats id_seat="18D"/>
+<Seats id_seat="18C"/>
+<Seats id_seat="8D"/>
+<Seats id_seat="21B"/>
+<Seats id_seat="21A"/>
+<Seats id_seat="8B"/>
+<Seats id_seat="21D"/>
+<Seats id_seat="8C"/>
+<Seats id_seat="21C"/>
+<Seats id_seat="8A"/>
+<Seats id_seat="7B"/>
+<Seats id_seat="23C"/>
+<Seats id_seat="7A"/>
+<Seats id_seat="23D"/>
+<Seats id_seat="23A"/>
+<Seats id_seat="23B"/>
+<Seats id_seat="7D"/>
+<Seats id_seat="7C"/>
+<Seats id_seat="10D"/>
+<Seats id_seat="10C"/>
+<Seats id_seat="10B"/>
+<Seats id_seat="24A"/>
+<Seats id_seat="10A"/>
+<Seats id_seat="19D"/>
+<Seats id_seat="19A"/>
+<Seats id_seat="19B"/>
+<Seats id_seat="19C"/>
+<Seats id_seat="22A"/>
+<Seats id_seat="6A"/>
+<Seats id_seat="22B"/>
+<Seats id_seat="22C"/>
+<Seats id_seat="6C"/>
+<Seats id_seat="22D"/>
+<Seats id_seat="6B"/>
+<Seats id_seat="6D"/>
+<Seats id_seat="11D"/>
+<Seats id_seat="11A"/>
+<Seats id_seat="11C"/>
+<Seats id_seat="11B"/>
+<Seats id_seat="5D"/>
+<Seats id_seat="5C"/>
+<Seats id_seat="5B"/>
+<Seats id_seat="5A"/>
+<Seats id_seat="13A"/>
+<Seats id_seat="25C"/>
+<Seats id_seat="25D"/>
+<Seats id_seat="26C"/>
+<Seats id_seat="12D"/>
+<Seats id_seat="26B"/>
+<Seats id_seat="12C"/>
+<Seats id_seat="26A"/>
+<Seats id_seat="12B"/>
+<Seats id_seat="12A"/>
+<Seats id_seat="4A"/>
+<Seats id_seat="4C"/>
+<Seats id_seat="4B"/>
+<Seats id_seat="24B"/>
+<Seats id_seat="24C"/>
+<Seats id_seat="14A"/>
+<Seats id_seat="24D"/>
+<Seats id_seat="14B"/>
+<Seats id_seat="13C"/>
+<Seats id_seat="13B"/>
+<Seats id_seat="25B"/>
+<Seats id_seat="25A"/>
+<Seats id_seat="13D"/>
+<Seats id_seat="4D"/>
+</Aircraft>
+<Aircraft model="DC9">
+<Seats id_seat="15C"/>
+<Seats id_seat="15B"/>
+<Seats id_seat="15A"/>
+<Seats id_seat="3A"/>
+<Seats id_seat="3B"/>
+<Seats id_seat="7B"/>
+<Seats id_seat="7A"/>
+<Seats id_seat="7D"/>
+<Seats id_seat="7C"/>
+<Seats id_seat="10D"/>
+<Seats id_seat="10C"/>
+<Seats id_seat="10B"/>
+<Seats id_seat="10A"/>
+<Seats id_seat="3D"/>
+<Seats id_seat="3C"/>
+<Seats id_seat="14C"/>
+<Seats id_seat="14D"/>
+<Seats id_seat="2A"/>
+<Seats id_seat="6A"/>
+<Seats id_seat="6C"/>
+<Seats id_seat="6B"/>
+<Seats id_seat="6D"/>
+<Seats id_seat="11D"/>
+<Seats id_seat="11A"/>
+<Seats id_seat="11C"/>
+<Seats id_seat="11B"/>
+<Seats id_seat="2C"/>
+<Seats id_seat="2B"/>
+<Seats id_seat="2D"/>
+<Seats id_seat="15D"/>
+<Seats id_seat="5D"/>
+<Seats id_seat="5C"/>
+<Seats id_seat="5B"/>
+<Seats id_seat="5A"/>
+<Seats id_seat="13A"/>
+<Seats id_seat="12D"/>
+<Seats id_seat="12C"/>
+<Seats id_seat="12B"/>
+<Seats id_seat="12A"/>
+<Seats id_seat="9A"/>
+<Seats id_seat="9B"/>
+<Seats id_seat="9C"/>
+<Seats id_seat="9D"/>
+<Seats id_seat="1D"/>
+<Seats id_seat="1C"/>
+<Seats id_seat="1B"/>
+<Seats id_seat="1A"/>
+<Seats id_seat="4A"/>
+<Seats id_seat="4C"/>
+<Seats id_seat="4B"/>
+<Seats id_seat="14A"/>
+<Seats id_seat="14B"/>
+<Seats id_seat="13C"/>
+<Seats id_seat="13B"/>
+<Seats id_seat="8D"/>
+<Seats id_seat="13D"/>
+<Seats id_seat="4D"/>
+<Seats id_seat="8B"/>
+<Seats id_seat="8C"/>
+<Seats id_seat="8A"/>
+</Aircraft>
+</Aircrafts>
+<Flights>
+<Flight DepartureAirport="TRN" DepartureTime="12:53" DestinationAirport="LTN" Number="FR486"/>
+<Flight DepartureAirport="MPX" DepartureTime="15:55" DestinationAirport="LTN" Number="TM204"/>
+<Flight DepartureAirport="LTN" DepartureTime="23:13" DestinationAirport="MPX" Number="KT427"/>
+<Flight DepartureAirport="LTN" DepartureTime="12:43" DestinationAirport="TRN" Number="ZB115"/>
+<Flight DepartureAirport="TRN" DepartureTime="17:32" DestinationAirport="MPX" Number="MM094"/>
+<Flight DepartureAirport="LTN" DepartureTime="5:10" DestinationAirport="MPX" Number="WL578"/>
+<Flight DepartureAirport="LTN" DepartureTime="6:49" DestinationAirport="TRN" Number="OD138"/>
+<Flight DepartureAirport="LTN" DepartureTime="20:36" DestinationAirport="MPX" Number="QR966"/>
+<Flight DepartureAirport="TRN" DepartureTime="13:15" DestinationAirport="MPX" Number="OD093"/>
+<Flight DepartureAirport="LTN" DepartureTime="10:20" DestinationAirport="TRN" Number="HD930"/>
+<Flight DepartureAirport="LTN" DepartureTime="0:45" DestinationAirport="TRN" Number="YA690"/>
+<Flight DepartureAirport="LTN" DepartureTime="8:54" DestinationAirport="TRN" Number="UF377"/>
+<Flight DepartureAirport="TRN" DepartureTime="17:33" DestinationAirport="LTN" Number="NL012"/>
+<Flight DepartureAirport="MPX" DepartureTime="14:39" DestinationAirport="TRN" Number="UY126"/>
+<Flight DepartureAirport="TRN" DepartureTime="9:2" DestinationAirport="MPX" Number="VW238"/>
+<Flight DepartureAirport="LTN" DepartureTime="18:28" DestinationAirport="TRN" Number="YJ666"/>
+<Flight DepartureAirport="MPX" DepartureTime="0:23" DestinationAirport="LTN" Number="QK727"/>
+<Flight DepartureAirport="MPX" DepartureTime="3:47" DestinationAirport="LTN" Number="DC163"/>
+</Flights>
+<FlightInstances>
+<FlightInstance Aircraft="DC9" Date="23/02/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="27/02/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="09/03/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="07/03/2010 CET" Delay="0" DepartureGate="" Flight="FR486" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="28/02/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="07/03/2010 CET" Delay="0" DepartureGate="" Flight="TM204" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="25/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="09/03/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="28/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="23/02/2010 CET" Delay="0" DepartureGate="" Flight="ZB115" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="27/02/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="07/03/2010 CET" Delay="0" DepartureGate="" Flight="MM094" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="25/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="27/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="WL578" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="28/02/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="OD138" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="QR966" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="07/03/2010 CET" Delay="0" DepartureGate="" Flight="QR966" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="QR966" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="23/02/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="09/03/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="OD093" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="27/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="09/03/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="23/02/2010 CET" Delay="0" DepartureGate="" Flight="HD930" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="YA690" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="27/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="09/03/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="28/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="23/02/2010 CET" Delay="0" DepartureGate="" Flight="UF377" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="27/02/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="07/03/2010 CET" Delay="0" DepartureGate="" Flight="NL012" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="27/02/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="09/03/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="UY126" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="25/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="07/03/2010 CET" Delay="0" DepartureGate="" Flight="VW238" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="19/02/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="09/03/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="07/03/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="18/02/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="08/03/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="28/02/2010 CET" Delay="0" DepartureGate="" Flight="YJ666" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="27/02/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="09/03/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="25/02/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="22/02/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="17/02/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="05/03/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="06/03/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="QK727" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="20/02/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="23/02/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="16/02/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="15/02/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="03/03/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="DC9" Date="26/02/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="01/03/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="25/02/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="B737" Date="21/02/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="A320" Date="24/02/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="A318" Date="02/03/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+<FlightInstance Aircraft="E170" Date="04/03/2010 CET" Delay="0" DepartureGate="" Flight="DC163" Status="BOOKING"/>
+</FlightInstances>
+</FlightMonitor>

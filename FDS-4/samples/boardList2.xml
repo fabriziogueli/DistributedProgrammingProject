@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- This is the list that should be produced when the fdsBoarding2.xml file
+     is given as input and the data generator is set with seed 12343 and testcase 2  -->
+<ns2:boardList xmlns:ns2="http://pad.polito.it/boardList" flight="HY903" date="2010-02-15+01:00">
+    <passenger seat="12B">Marta Chemin</passenger>
+    <passenger seat="15A">Maurizio Baldo</passenger>
+    <passenger seat="14D">Maurizio Del Santo</passenger>
+    <passenger seat="10A">Monica Elkan</passenger>
+    <passenger seat="8B">Sonia Gonzales</passenger>
+</ns2:boardList>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/FDSInfo" targetNamespace="http://www.example.org/FDSInfo">
+
+ <element name="FlightMonitor" type="tns:FlightMonitorType"/>
+
+<complexType name="FlightMonitorType">
+   <sequence>
+    <element name="Aircraft" type="tns:AircraftType" minOccurs="0" maxOccurs="unbounded"/>
+     <element name="Flight" type="tns:FlightType" minOccurs="0" maxOccurs="unbounded"/>
+      <element name="FlightInstance" type="tns:FlightInstanceType" minOccurs="0" maxOccurs="unbounded"/>
+   </sequence>
+  </complexType>
+ 
+ 
+ <complexType name="AircraftType">
+  <sequence>
+   <element name="Seat" type="string" minOccurs="1" maxOccurs="unbounded"/>
+  </sequence>
+  
+  <attribute name="Model" type="ID" use="required"/>
+ </complexType>
+ 
+ 
+ <complexType name="FlightType">
+  <attribute name="DestinationAirport" type="tns:AirportType" use="required"/>
+	<attribute name="DepartureAirport" type="tns:AirportType" use="required"/>
+	<attribute name="DepartureTime" type="time" use="required"/>
+	<attribute name="Number" type="tns:NumberType" use="required"/>
+	
+ </complexType>
+ 
+ 
+ <complexType name="FlightInstanceType">
+  
+  <attribute name="DepartureGate" type="string" use="required"/>
+	<attribute name="Aircraft" type="string" use="required"/>
+	<attribute name="Flight" type="tns:NumberType" use="required"/>
+	<attribute name="Delay" type="integer" use="optional"/>
+	<attribute name="Date" type="date" use="required"/>
+	
+	<attribute name="Status" type="tns:StatusType" use="required"/>
+   
+ 
+  </complexType>
+  
+  
+  <complexType name="PassengerType">
+   <attribute name="Name" type="string" use="required"/>
+    <attribute name="Seat" type="string" use="required"/>
+     <attribute name="Boarded" type="boolean" use="required"/>
+   
+  </complexType>
+  
+  
+  <simpleType name="NumberType">
+    	<restriction base="ID">
+    		<pattern value="[a-zA-Z]{2}([0-9]){0,4}"></pattern>
+    	</restriction>
+    </simpleType>
+    
+    <simpleType name="AirportType">
+    	<restriction base="string">
+    		<pattern value="[a-zA-Z]{3}"></pattern>
+    	</restriction>
+    </simpleType>
+    
+    <simpleType name="StatusType">
+    	<restriction base="string">
+     <enumeration value="ARRIVED"/>
+     <enumeration value="BOARDING"/>
+     <enumeration value="BOOKING"/>
+      <enumeration value="CANCELLED"/>
+       <enumeration value="CHECKINGIN"/>
+        <enumeration value="DEPARTED"/>
+    	</restriction>
+    </simpleType>
+    
+</schema>

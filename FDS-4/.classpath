@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="gen-src"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="var" path="JRE_LIB" sourcepath="JRE_SRC"/>
+	<classpathentry kind="lib" path="lib/FDS.jar"/>
+	<classpathentry kind="lib" path="lib/FDSRandom.jar"/>
+	<classpathentry kind="lib" path="lib/lab4.jar"/>
+	<classpathentry kind="lib" path="custom/soa-model-core-1.4.1.4.jar"/>
+	<classpathentry kind="lib" path="custom/groovy-2.0.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

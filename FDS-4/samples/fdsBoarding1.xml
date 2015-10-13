@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+	Sample XML document with information for FDSBoarding client
+	The client should board passengers for flight n. QQ793 of 2010-02-09 (UTC)
+	The url of the service is http://localhost:7070/fdscontrol
+	
+	If the data generator is set with seed 12345 and testcase 2,
+	the client should report an error because the flight status is "ARRIVED" (exit code 1)
+ -->
+<ns2:boarding xmlns:ns2="http://pad.polito.it/fdsBoarding" endpoint="http://localhost:7070/fdscontrol" flight="QQ793" date="2010-02-09+01:00">
+  <!-- Board passenger Sonia Gonzales -->
+  <passenger>Sonia Gonzales</passenger>
+  <!-- Board passenger Clara Piccoli -->
+  <passenger>Clara Piccoli</passenger>
+</ns2:boarding>

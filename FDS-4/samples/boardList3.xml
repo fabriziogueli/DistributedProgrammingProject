@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- This is the list that should be produced when the fdsBoarding3.xml file
+     is given as input and the data generator is set with seed 12343 and testcase 2  -->
+<ns2:boardList xmlns:ns2="http://pad.polito.it/boardList" flight="HC890" date="2010-02-15+01:00">
+    <passenger seat="2A">Elisabeth Di Crescenzo</passenger>
+    <passenger seat="3B">Carlo Rossi</passenger>
+    <passenger seat="7D">Clara Elkan</passenger>
+    <passenger seat="9C">Giovanni Rossi</passenger>
+    <passenger seat="13C">Sonia Del Santo</passenger>
+    <passenger seat="11C">Marta Diana</passenger>
+    <passenger seat="4B">Francesca Diana</passenger>
+    <passenger seat="13B">Giuseppe Bianchi</passenger>
+    <passenger seat="3C">Giovanni Piccoli</passenger>
+    <passenger seat="1D">Paola Aziz</passenger>
+    <passenger seat="7C">Elisabeth Servini</passenger>
+    <passenger seat="9D">Clara Aziz</passenger>
+    <passenger seat="14D">Giuseppe Aziz</passenger>
+    <passenger seat="1C">Marco Rossi</passenger>
+    <passenger seat="15A">Francesca Perissino</passenger>
+    <passenger seat="5A">Ludovico Gonzales</passenger>
+    <passenger seat="10C">Mario Turturro</passenger>
+</ns2:boardList>

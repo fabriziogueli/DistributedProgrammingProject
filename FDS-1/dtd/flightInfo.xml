@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FlightMonitor SYSTEM "flightInfo.dtd">
+<FlightMonitor>
+<Aircrafts>
+    <Aircraft model="A1150">
+      <Seats id_seat="B1"></Seats>
+      <Seats id_seat="B2"></Seats>
+      <Seats id_seat="C1"></Seats>
+      <Seats id_seat="C2"></Seats>
+    </Aircraft>
+    <Aircraft model="A1200">
+      <Seats id_seat="D19"></Seats>
+      <Seats id_seat="D20"></Seats>
+      <Seats id_seat="D21"></Seats>
+      <Seats id_seat="D22"></Seats>
+      <Seats id_seat="D23"></Seats>
+    </Aircraft>
+</Aircrafts>  
+   
+<Flights>
+ <Flight DestinationAirport="FCO" DepartureAirport="TRN" DepartureTime="14:20" Number="FR100"></Flight>  
+ <Flight DestinationAirport="MXP" DepartureAirport="CDG" DepartureTime="17:20" Number="FR200"></Flight>
+  <Flight DestinationAirport="MPO" DepartureAirport="TRN" DepartureTime="11:20" Number="FR128"></Flight>  
+ <Flight DestinationAirport="CTA" DepartureAirport="BLQ" DepartureTime="20:20" Number="FR228"></Flight>
+</Flights>
+
+<FlightInstances> 
+    <FlightInstance Flight="FR100" Aircraft="A1200" Delay="2" Date="05/10/2014 CET" Status="DEPARTED" DepartureGate="9"> 
+      <Passenger boarded="true" Name="Alessio Mirabella" Seat="D22"></Passenger> 
+      <Passenger boarded="true" Name="Mario Rossi" Seat="D19"></Passenger>   
+      <Passenger boarded="true" Name="Pippo Luna" Seat="D23"></Passenger>
+      <Passenger boarded="true" Name="Marco Biondi" Seat="D20"></Passenger>
+    </FlightInstance>     
+    <FlightInstance Flight="FR200" Aircraft="A1150" Delay="1" Date="08/10/2014 CET" Status="DEPARTED" DepartureGate="5"> 
+      <Passenger boarded="true" Name="Angelo Bevilacqua" Seat="B1"></Passenger> 
+      <Passenger boarded="true" Name="Francesco Giannone" Seat="B2"></Passenger>  
+      <Passenger boarded="true" Name="Alex Britti" Seat="C1"></Passenger> 
+      <Passenger boarded="true" Name="Andrea Braido" Seat="C2"></Passenger>  
+    </FlightInstance>     
+</FlightInstances>
+
+</FlightMonitor> 
+
+
+

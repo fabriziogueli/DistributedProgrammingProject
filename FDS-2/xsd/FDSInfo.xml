@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:FlightMonitor xmlns:tns="http://www.example.org/FDSInfo"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.example.org/FDSInfo FDSInfo.xsd">
+    
+<Aircraft Model="BOEING-775">
+    
+ <Seat>1A</Seat>
+ 
+ <Seat>1B</Seat> 
+ 
+ <Seat>1C</Seat> 
+ 
+ <Seat>1D</Seat> 
+ 
+ <Seat>1E</Seat> 
+ 
+ <Seat>1F</Seat> 
+       
+</Aircraft>   
+
+<Aircraft Model="BOEING-888">
+    
+ <Seat>1A</Seat>
+ 
+ <Seat>1B</Seat> 
+ 
+ <Seat>2A</Seat> 
+ 
+ <Seat>2B</Seat> 
+ 
+ <Seat>3A</Seat> 
+ 
+ <Seat>3B</Seat> 
+      
+</Aircraft>  
+       
+
+    
+<Flight  DepartureAirport="PMO" DestinationAirport="PSA" Number="FR325"   DepartureTime="13:25:00"></Flight>   
+
+
+<Flight  DepartureAirport="CTA" DestinationAirport="TRN" Number="FR200"   DepartureTime="21:00:00"></Flight> 
+       
+
+    
+ <FlightInstance DepartureGate="5" Aircraft="BOEING-775" Status="CHECKINGIN" Date="2014-05-13" Flight="FR325" >
+     
+ <Passenger Name="Fabrizio Gueli" Seat="3A" Boarded="true"></Passenger>  
+ 
+ <Passenger Name="Alessandro DelPiero" Seat="3B" Boarded="true"></Passenger> 
+ 
+ <Passenger Name="Jimmy Page" Seat="2B" Boarded="false"></Passenger>    
+        
+ </FlightInstance>   
+ 
+ 
+ 
+ <FlightInstance DepartureGate="10" Aircraft="BOEING-888"  Status="BOARDING" Date="2014-10-08" Flight="FR200" Delay="15"  >
+     
+<Passenger Name="Gianluigi Buffon" Seat="1A" Boarded="false"></Passenger>   
+
+<Passenger Name="Andrea Pirlo" Seat="1B" Boarded="false"></Passenger>  
+        
+ </FlightInstance>   
+        
+</tns:FlightMonitor>

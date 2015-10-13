@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pad.polito.it/boardList" xmlns:tns="http://pad.polito.it/boardList">
+
+
+    <element name="boardList" type="tns:boardListType"></element>
+    
+    <complexType name="boardListType">
+        <annotation>
+        	<documentation>The list of boarded passengers for a flight instance</documentation></annotation>
+        <sequence>
+    		<element name="passenger" type="tns:passengerType"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    	</sequence>
+    	<attribute name="flight" type="string">
+    		<annotation>
+    			<documentation>the flight number of this board list</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="date" type="date">
+    		<annotation>
+    			<documentation>the date of the flight of this board list</documentation>
+    		</annotation>
+    	</attribute>
+    </complexType>
+
+    <complexType name="passengerType">
+        <annotation>
+        	<documentation>A boarded passenger</documentation>
+        </annotation>
+        <simpleContent>
+    		<extension base="string">
+    			<attribute name="seat" type="string">
+    				<annotation>
+    					<documentation>The seat assigned to the passenger</documentation>
+    				</annotation>
+    			</attribute>
+    		</extension>
+    	</simpleContent>
+    </complexType>
+</schema>

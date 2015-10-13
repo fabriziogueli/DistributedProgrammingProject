@@ -1,0 +1,32 @@
+Distributed Programming II (A.Y. 2014/15)
+======================================================
+
+Assignment n. 4b
+----------------
+
+This archive contains:
+
+- README            This file
+
+- Assignment4b.pdf  The text of assignment 4
+
+- build.xml         Ant file to run server, client, and test programs
+
+- lib               A directory containing the jars needed for this
+                    assignment
+
+- samples           A directory containing sample input and output files
+
+- src               The directory where you must put your code
+
+- wsdl              The directory where you must put your WSDL files
+
+- xsd               A directory containing the schema for the XML files
+                    to be used by the client
+
+- data		    	A directory containing customization files for the pseudo random data generator
+
+- custom		    A directory where you can put your customization binding files
+
+
+

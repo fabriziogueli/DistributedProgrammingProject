@@ -1,0 +1,32 @@
+The root element is FlightMonitor, it contains three sub elements: Aircrafts,Flights,FlightInstances.
+These sub elements are only containers. I have used them to increase the comprehensibility of the xml file, but they are not necessary.
+
+An Aircrafts element may contains zero or more Aircraft element.
+An Aircraft element may contains one or more Seats element and must have one required attribute:
+1)an ID type attribute "model" = The name of the model.
+
+A Seats element is an empty element that must have one required attribute:
+1)a CDATA type attribute "id_seat" = The seats available on the aircraft.
+
+A Flights element may contains zero or more Flight element.
+A Flight element is an empty element that must have four required attributes, an ID type and three CDATA type:
+1)Number = the number of the flight.
+2)DestinationAirport =  the arrival airport code.
+3)DepartureAirport =  the departure airport code.
+4)DepartureTime = the departure time.
+
+A FlightInstances may contains zero or more FlightInstance element.
+A FlightInstance element may contains zero or more Passenger element and must have six required attribute:
+
+1) a CDATA type attribute "DepartureGate" = the departure gate assigned to this flight instance.
+2) a CDATA type attribute "Delay" =  the delay of this flight instance. (if there is no Delay, it will be zero)
+3) a CDATA type attribute "Date" =  the departure date for this flight instance.
+4) an IDREF type attribute "Aircraft" = the Aircraft id which the flight instance refers to;
+5) an IDREF type attribute "Flight" = the Flight id which the flight instance refers to;
+6) an Enumeration type "Status" = the status of this flight instance.
+
+
+A Passenger element is an empty element that must have three required attributes:
+1) a CDATA type attribute "Name" = the passenger's name.
+2) a CDATA type attribute "Seat" =  the seat assigned to the passenger.
+3) an Enumeration type "boarded" = Tells if the passenger is already on-board.

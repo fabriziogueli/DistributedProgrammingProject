@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project basedir="." default="run-server" name="FDS-4">
+	<description>
+			Script for FDS Assignment 4
+	</description>
+
+	<!-- The random "FlightMonitorFactory" used for FDSInfo-->
+	<property name="FDSInfo.FlightMonitorFactory" value="it.polito.dp2.FDS.Random.FlightMonitorFactoryImpl" />
+
+	<!-- The default test case -->
+	<property name="testcase" value="0" />
+	<!-- The default test class -->
+	<property name="test.class" value="it.polito.dp2.FDS.lab4.tests.FDSTests" />
+
+    <!-- The location of the FDSBooking web service -->
+	<property name="acronym" value="FDS"/>
+	<property name="PORT" value="7070"/>
+	<property name="PORT2" value="7071"/>
+	<property name="URL1" value="http://localhost:${PORT}/FDSOperationService"/>
+	<property name="URL2" value="http://localhost:${PORT2}/FDSInfoService"/>
+	<property name="WSDL" value="wsdl/FDSControl.wsdl"/>
+	<property name="WSDL2" value="wsdl/FDSInfo.wsdl"/>
+	
+	<property name="basedir" location="." />
+
+	<property name="src.dir" location="${basedir}/src" />
+	<property name="srcServer.dir" location="${basedir}/src/it/polito/dp2/FDS/sol4/server" />
+	<property name="srcClient.dir" location="${basedir}/src/it/polito/dp2/FDS/sol4/client" />
+	<property name="build.dir" location="${basedir}/build" />
+	<property name="lib.dir" location="${basedir}/lib" />
+	<property name="gen.dir" location="${basedir}/gen-src" />
+	<property name="cust.dir" location="${basedir}/custom" />
+	<property name="wsdl.dir" location="${basedir}/wsdl" />
+
+	<property name="package" value="it.polito.dp2.FDS.lab4.gen"/>
+	<property name="custom.file" location="${basedir}/custom/bindings.xml" />
+	
+	<property name="debug" value="true" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.7" />
+	<property name="source" value="1.7" />
+	<property name="schema.dir" location="${basedir}/xsd" />
+	
+	<!-- The classpath to be used for compilation of the solution (not used this year) -->
+	<path id="sol.classpath">
+		<pathelement location="${lib.dir}/FDS.jar"/>
+	</path>
+
+	<!-- The classpath that includes only the FDS.jar -->
+	<path id="FDS.classpath">
+		<pathelement location="${lib.dir}/FDS.jar"/>
+	</path>
+	
+	<path id="test-classpath">
+		<pathelement location="${build.dir}" />
+		<pathelement location="${lib.dir}/FDSRandom.jar"/>
+		<pathelement location="${lib.dir}/FDS.jar"/>
+		<pathelement location="${lib.dir}/lab4.jar"/>
+
+		</path>
+	
+	
+	<!-- Target init	-->
+	<target name="init">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${gen.dir}" />
+	</target>
+	
+		<!-- Target chk-bindings -->
+	<target name="-chk-bindings">
+		<uptodate property="generate-bindings.notRequired" targetfile="${gen.dir}/.flagfile">
+			<srcfiles dir="${schema.dir}" includes="**/*.xsd" />
+		</uptodate>
+	</target>
+	
+	<!-- Target generate-bindings -->
+	<target name="generate-bindings" unless="generate-bindings.notRequired" depends="init,-chk-bindings">
+		<exec executable="xjc" failonerror="true" >
+			<arg value="-d" />
+			<arg value="${gen.dir}" />
+			<arg value="-p" />
+			<arg value="it.polito.dp2.FDS.sol4.jaxb.blist" />
+			<arg value="${schema.dir}/boardList.xsd" />
+		</exec>
+		
+		<exec executable="xjc" failonerror="true" >
+			<arg value="-d" />
+			<arg value="${gen.dir}" />
+			<arg value="-p" />
+			<arg value="it.polito.dp2.FDS.sol4.jaxb.fdsboarding" />
+			<arg value="${schema.dir}/fdsBoarding.xsd" />
+		</exec>
+		<touch file="${gen.dir}/.flagfile" />
+	</target>
+		
+	
+	<!-- define the "compile.wsdl" target -->
+	<target name="compile-wsdl" depends="init">
+	    <echo message = "${WSDL}"/> 
+	    <exec executable="wsimport">
+	        <arg line="-d '${build.dir}' -p '${package}' -s '${gen.dir}' -keep ${WSDL}"/>
+	    </exec>
+	    
+	     <echo message = "${WSDL2}"/> 
+	    <exec executable="wsimport">
+	        <arg line="-d '${build.dir}' -p '${package}' -s '${gen.dir}' -keep ${WSDL2}"/>
+	    </exec>
+	</target>    
+
+
+	<!-- Target buildServer --> 
+	
+	<target name="build-server" depends="compile-wsdl">
+		<javac destdir="${build.dir}" debug="${debug}" debuglevel="${debuglevel}" source="${source}" target="${target}" includeantruntime="false">
+			<src path="${srcServer.dir}"/>
+			<src path="${gen.dir}"/>
+			<classpath>
+				<path refid="test-classpath"/>
+			</classpath>
+		</javac>
+   		<echo>Done.</echo>
+   </target>
+   
+   
+   <!-- Target buildClient -->
+	<target name="build-client" depends="compile-wsdl, generate-bindings">
+		<echo>Building the Client</echo>
+		<javac destdir="${build.dir}" debug="${debug}" debuglevel="${debuglevel}" source="${source}" target="${target}" includeantruntime="false">
+			<src path="${srcClient.dir}"/>
+			<src path="${gen.dir}"/>
+			<classpath>
+				<path refid="test-classpath" />
+			</classpath>
+		</javac>
+		
+		 
+		
+
+		<echo>Done.</echo>
+
+	</target>
+   
+	 <target name="clean">
+		<delete dir="${build.dir}"/>
+   		<delete dir="${gen.dir}"/>
+   </target>  
+
+	 
+
+</project>

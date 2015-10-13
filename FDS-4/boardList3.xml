@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:boardList xmlns:ns2="http://pad.polito.it/boardList" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" flight="HC890" date="2010-02-15+01:00" xsi:schemaLocation="http://pad.polito.it/boardList xsd/boardList.xsd">
+    <passenger seat="3B">Carlo Rossi</passenger>
+    <passenger seat="9D">Clara Aziz</passenger>
+    <passenger seat="7D">Clara Elkan</passenger>
+    <passenger seat="2A">Elisabeth Di Crescenzo</passenger>
+    <passenger seat="7C">Elisabeth Servini</passenger>
+    <passenger seat="4B">Francesca Diana</passenger>
+    <passenger seat="15A">Francesca Perissino</passenger>
+    <passenger seat="3C">Giovanni Piccoli</passenger>
+    <passenger seat="9C">Giovanni Rossi</passenger>
+    <passenger seat="14D">Giuseppe Aziz</passenger>
+    <passenger seat="13B">Giuseppe Bianchi</passenger>
+    <passenger seat="5A">Ludovico Gonzales</passenger>
+    <passenger seat="1C">Marco Rossi</passenger>
+    <passenger seat="10C">Mario Turturro</passenger>
+    <passenger seat="11C">Marta Diana</passenger>
+    <passenger seat="1D">Paola Aziz</passenger>
+    <passenger seat="13C">Sonia Del Santo</passenger>
+</ns2:boardList>

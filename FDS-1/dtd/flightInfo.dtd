@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT FlightMonitor (Aircrafts,Flights,FlightInstances)>
+<!ELEMENT Aircrafts (Aircraft*)>
+<!ELEMENT Aircraft (Seats+)>
+<!ATTLIST Aircraft model ID #REQUIRED
+				   >
+
+<!ELEMENT Seats EMPTY>
+<!ATTLIST Seats id_seat CDATA #REQUIRED>
+
+<!ELEMENT Flights (Flight*)>
+<!ELEMENT Flight EMPTY>
+<!ATTLIST Flight 
+				DestinationAirport CDATA #REQUIRED
+				DepartureAirport CDATA #REQUIRED
+				DepartureTime CDATA #REQUIRED
+				Number ID #REQUIRED>
+
+
+<!ELEMENT FlightInstances (FlightInstance*)>
+<!ELEMENT FlightInstance (Passenger*)>
+<!ATTLIST FlightInstance				
+				DepartureGate CDATA #REQUIRED
+				Aircraft IDREF #REQUIRED
+				Flight IDREF #REQUIRED
+				Delay CDATA #REQUIRED				 
+				Date CDATA #REQUIRED
+				Status (ARRIVED|BOARDING|BOOKING|CANCELLED|CHECKINGIN|DEPARTED) #REQUIRED>
+	
+<!ELEMENT Passenger EMPTY>
+<!ATTLIST Passenger
+				boarded (TRUE|FALSE|true|false) #REQUIRED
+				Name CDATA #REQUIRED
+				Seat CDATA #REQUIRED>
+				
+				
+				 
+				 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:boardList xmlns:ns2="http://pad.polito.it/boardList" flight="MA665" date="2010-02-14+01:00">
+    <passenger seat="21B">Claude Piccoli</passenger>
+    <passenger seat="23D">Carlo Baldo</passenger>
+    <passenger seat="9B">Claude Bianchi</passenger>
+    <passenger seat="11C">Giuseppe Chemin</passenger>
+    <passenger seat="19B">Caio Turturro</passenger>
+    <passenger seat="15A">Giovanni Aziz</passenger>
+    <passenger seat="1A">Elisabeth Di Crescenzo</passenger>
+    <passenger seat="22D">John Elkan</passenger>
+    <passenger seat="10A">Mauro Perissino</passenger>
+    <passenger seat="24C">Marco Del Santo</passenger>
+    <passenger seat="14C">Clara Aziz</passenger>
+    <passenger seat="12B">Paolo Del Santo</passenger>
+    <passenger seat="14B">Francesco Del Santo</passenger>
+    <passenger seat="13D">Paolo Aziz</passenger>
+    <passenger seat="26A">Paola Baldo</passenger>
+    <passenger seat="7B">Giuseppe Aziz</passenger>
+    <passenger seat="13B">Diana Bianchi</passenger>
+    <passenger seat="22C">Paolo Rossi</passenger>
+    <passenger seat="16A">Caio Perissino</passenger>
+</ns2:boardList>

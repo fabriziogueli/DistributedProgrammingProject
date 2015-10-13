@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:tns="http://www.example.org/FDSControl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FDSControl" 
+	targetNamespace="http://www.example.org/FDSControl/" xmlns:xsd2="http://www.example.org/FDSInfo">
+ <wsdl:documentation>
+  	FDSBoadService allows Boarding terminals or Operator consoles to perform board management operations.
+	FDSCheckInService allows Check-in terminals or Operator consoles to perform check-in operations.
+	FDSOperationService allows Operator consoles to perform other operations.
+  </wsdl:documentation>
+    <wsdl:types>
+    <xsd:schema targetNamespace="http://www.example.org/FDSControl/">
+  	<xsd:import schemaLocation="FDSInfo.xsd"
+    	namespace="http://www.example.org/FDSInfo">
+    </xsd:import>
+ 
+      <xsd:element name="CheckIn">
+      <xsd:annotation><xsd:documentation>The element that represents a check-in request (check in operation)</xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+          	<xsd:element name="name" type="xsd:string">
+	<xsd:annotation><xsd:documentation>The passenger's name of which perform check in</xsd:documentation></xsd:annotation>
+	</xsd:element> 
+          	<xsd:element name="number" type="xsd2:NumberType">
+          	<xsd:annotation><xsd:documentation>The number of the flight</xsd:documentation></xsd:annotation>
+          	</xsd:element>
+	
+          	<xsd:element name="date" type="xsd:date">
+          	<xsd:annotation><xsd:documentation>The flight date of the flight instance</xsd:documentation></xsd:annotation>
+          	</xsd:element>
+	
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="CheckInResponse">
+      <xsd:annotation><xsd:documentation>The element that represents a check-in response (the boarding pass information)</xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+          	<xsd:element name="seat" type="xsd:string" >
+          	<xsd:annotation><xsd:documentation>The seat assigned to the passenger</xsd:documentation></xsd:annotation>
+          	</xsd:element>
+	
+          	<xsd:element name="gate" type="xsd:string">
+          	<xsd:annotation><xsd:documentation>The flight instance gate</xsd:documentation></xsd:annotation>
+          	</xsd:element>
+	
+          	<xsd:element name="delay" type="xsd:int">
+          	<xsd:annotation><xsd:documentation>The flight instance delay</xsd:documentation></xsd:annotation>
+          	</xsd:element>
+	
+          	<xsd:element name="status" type="xsd2:StatusType">
+          	<xsd:annotation><xsd:documentation>The flight instance status</xsd:documentation></xsd:annotation>
+          	</xsd:element>
+	
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="startBoard">
+      <xsd:annotation><xsd:documentation>The element that represents a start board request (start boarding operation)</xsd:documentation></xsd:annotation>
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="number" type="xsd2:NumberType">
+      			<xsd:annotation><xsd:documentation>The number of the flight of which to start boarding</xsd:documentation></xsd:annotation>
+      			</xsd:element>
+	
+      			<xsd:element name="date" type="xsd:date">
+      			<xsd:annotation><xsd:documentation>The flight date of the flight instance</xsd:documentation></xsd:annotation>
+      			</xsd:element>
+	
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+
+
+      <xsd:element name="startBoardResponse">
+      <xsd:annotation><xsd:documentation>The element that represents a start board response (it is a void operation)</xsd:documentation></xsd:annotation>
+      	<xsd:complexType>
+      		<xsd:sequence>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="BoardPassenger">
+      <xsd:annotation><xsd:documentation>The element that represents board Passenger request (Board Passenger operation)</xsd:documentation></xsd:annotation>
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="name" type="xsd:string">
+      			<xsd:annotation><xsd:documentation>The passenger's name of which perform boarding</xsd:documentation></xsd:annotation>
+      			</xsd:element>
+	
+      			<xsd:element name="number" type="xsd2:NumberType">
+      			<xsd:annotation><xsd:documentation>The number of the flight</xsd:documentation></xsd:annotation>
+      			</xsd:element>
+	
+      			<xsd:element name="date" type="xsd:date">
+      			<xsd:annotation><xsd:documentation>The flight date of the flight instance</xsd:documentation></xsd:annotation>
+      			</xsd:element>
+	
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="BoardPassengerResponse">
+      <xsd:annotation><xsd:documentation>The element that represents a start boardPassenger response (it is a void operation)</xsd:documentation></xsd:annotation>
+      	<xsd:complexType>
+      		<xsd:sequence>     			
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+
+
+      <xsd:element name="CancelFlightInstance">
+      <xsd:annotation><xsd:documentation>The element that represents a CancelFlightInstance request</xsd:documentation></xsd:annotation>
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="number" type="xsd2:NumberType">
+      			<xsd:annotation><xsd:documentation>The flight number of the flight instance to cancel</xsd:documentation></xsd:annotation>
+      			</xsd:element>
+	
+      			<xsd:element name="date" type="xsd:date">
+      			<xsd:annotation><xsd:documentation>The flight date of the flight instance to cancel</xsd:documentation></xsd:annotation>
+      			</xsd:element>
+	
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+
+
+      <xsd:element name="CancelFlightInstanceResponse">
+      <xsd:annotation><xsd:documentation>The element that represents a cancelFlightInstance response (it is a void operation)</xsd:documentation></xsd:annotation>
+      	<xsd:complexType>
+      		<xsd:sequence>      			
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      
+      <xsd:element name="UpdateDelay">
+            <xsd:annotation><xsd:documentation>The element that represents an UpdateDelay request (UpdateDelay Operation)</xsd:documentation></xsd:annotation>
+      
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="delay" type="xsd:int">
+      		<xsd:annotation><xsd:documentation>The delay of the flight instance to update</xsd:documentation></xsd:annotation>	
+      			</xsd:element>
+      			<xsd:element name="number" type="xsd2:NumberType">
+      			<xsd:annotation><xsd:documentation>The flight number of the flight instance to update</xsd:documentation></xsd:annotation>
+      			</xsd:element>
+      			<xsd:element name="date" type="xsd:date">
+      		<xsd:annotation><xsd:documentation>The flight date of the flight instance to update</xsd:documentation></xsd:annotation>	
+      			</xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      
+      <xsd:element name="UpdateDelayResponse">
+            <xsd:annotation><xsd:documentation>The element that represents an UpdateDelay response (it is sa void operation)</xsd:documentation></xsd:annotation>
+      
+      	<xsd:complexType>
+      		<xsd:sequence>      			
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      
+      <xsd:element name="UpdateGate">
+            <xsd:annotation><xsd:documentation>The element that represents an UpdateGate request (UpdateGate Operation)</xsd:documentation></xsd:annotation>
+      
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="gate" type="xsd:string">
+      		<xsd:annotation><xsd:documentation>The gate of the flight instance to update</xsd:documentation></xsd:annotation>	
+      			</xsd:element>
+      			<xsd:element name="number" type="xsd2:NumberType">
+      		<xsd:annotation><xsd:documentation>The flight number of the flight instance to update</xsd:documentation></xsd:annotation>	
+      			</xsd:element>
+      			<xsd:element name="date" type="xsd:date">
+      		<xsd:annotation><xsd:documentation>The flight date of the flight instance to update</xsd:documentation></xsd:annotation>	
+      			</xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      
+      
+      <xsd:element name="UpdateGateResponse">
+                  <xsd:annotation><xsd:documentation>The element that represents an UpdateGate response (it is sa void operation)</xsd:documentation></xsd:annotation>
+      
+      	<xsd:complexType>
+      		<xsd:sequence>     			
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      
+      
+      <xsd:element name="getBoardedPassengers">
+                  <xsd:annotation><xsd:documentation>The element that represents a getBoardedPassengers request (getBoardedPassengers Operation)</xsd:documentation></xsd:annotation>
+      
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="number" type="xsd2:NumberType">
+      				<xsd:annotation>
+      					<xsd:documentation>
+      						The flight number of the flight instance
+      						for which boarded passengers have to be
+      						listed
+      					</xsd:documentation>
+      				</xsd:annotation>
+
+      			</xsd:element>
+      			<xsd:element name="date" type="xsd:date">
+      				<xsd:annotation>
+      					<xsd:documentation>
+      						The flight date of the flight instance for
+      						which boarded passengers have to be listed
+      					</xsd:documentation>
+      				</xsd:annotation>
+
+      			</xsd:element>
+      			<xsd:element name="pageNumber" type="xsd:int">
+   		<xsd:annotation><xsd:documentation>The number of the page to receive</xsd:documentation></xsd:annotation>	
+      			
+      			</xsd:element>
+      			<xsd:element name="pageSize" type="xsd:int">
+      				 <xsd:annotation><xsd:documentation>The number of elements per page to receive</xsd:documentation></xsd:annotation>	
+      			
+      			</xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      
+      <xsd:element name="getBoardedPassengersResponse">
+                        <xsd:annotation><xsd:documentation>The element that represents a getBoardedPassengers response (getBoardedPassengers Operation)</xsd:documentation></xsd:annotation>
+      
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="out" type="xsd2:PassengerType" maxOccurs="unbounded" minOccurs="0">
+      	<xsd:annotation><xsd:documentation>The list of boarded passengers</xsd:documentation></xsd:annotation>	
+      			
+      			</xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      
+      
+      <xsd:element name="fdsError">
+            <xsd:annotation><xsd:documentation>A fault raised when an error occurred</xsd:documentation></xsd:annotation>
+      
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="errorcode"
+      				type="xsd:int">
+      <xsd:annotation><xsd:documentation>The Error code</xsd:documentation></xsd:annotation>	
+      				
+      			</xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    </wsdl:types>
+  <wsdl:message name="CheckInRequest">
+    <wsdl:part element="tns:CheckIn" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CheckInResponse">
+    <wsdl:part element="tns:CheckInResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="startBoardRequest">
+  	<wsdl:part name="parameters" element="tns:startBoard"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="startBoardResponse">
+  	<wsdl:part name="parameters" element="tns:startBoardResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="BoardPassengerRequest">
+  	<wsdl:part name="parameters" element="tns:BoardPassenger"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="BoardPassengerResponse">
+  	<wsdl:part name="parameters" element="tns:BoardPassengerResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CancelFlightInstanceRequest">
+  	<wsdl:part name="parameters" element="tns:CancelFlightInstance"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CancelFlightInstanceResponse">
+  	<wsdl:part name="parameters" element="tns:CancelFlightInstanceResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateDelayRequest">
+  	<wsdl:part name="parameters" element="tns:UpdateDelay"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateDelayResponse">
+  	<wsdl:part name="parameters" element="tns:UpdateDelayResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateGateRequest">
+  	<wsdl:part name="parameters" element="tns:UpdateGate"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateGateResponse">
+  	<wsdl:part name="parameters" element="tns:UpdateGateResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBoardedPassengersRequest">
+  	<wsdl:part name="parameters" element="tns:getBoardedPassengers"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBoardedPassengersResponse">
+  	<wsdl:part name="parameters" element="tns:getBoardedPassengersResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fdsError">
+  	<wsdl:part name="parameters" element="tns:fdsError"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="FDSCheckin">
+  <wsdl:documentation>Interface used to perform check-in operation</wsdl:documentation>
+    <wsdl:operation name="CheckIn">
+      <wsdl:input message="tns:CheckInRequest"/>
+      <wsdl:output message="tns:CheckInResponse"/>
+      <wsdl:fault name="fault" message="tns:fdsError"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FDSBoard">
+  <wsdl:documentation>Interface used to start Flight Boarding, Board Passengers and get boarded passengers</wsdl:documentation>
+  	<wsdl:operation name="startBoard">
+  	<wsdl:documentation>Operation for starting Flight Boarding</wsdl:documentation>
+  		<wsdl:input message="tns:startBoardRequest"></wsdl:input>
+  		<wsdl:output message="tns:startBoardResponse"></wsdl:output>
+  		<wsdl:fault name="fault" message="tns:fdsError"></wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="BoardPassenger">
+  	<wsdl:documentation>Operation for boarding a passenger</wsdl:documentation>
+  		<wsdl:input message="tns:BoardPassengerRequest"></wsdl:input>
+  		<wsdl:output message="tns:BoardPassengerResponse"></wsdl:output>
+  		<wsdl:fault name="fault" message="tns:fdsError"></wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="getBoardedPassengers">
+  	<wsdl:documentation>Operation for getting the list of boarded passengers for a flight instance.</wsdl:documentation>
+  		<wsdl:input message="tns:getBoardedPassengersRequest"></wsdl:input>
+  		<wsdl:output message="tns:getBoardedPassengersResponse"></wsdl:output>
+            <wsdl:fault name="fault" message="tns:fdsError"></wsdl:fault>
+        </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FDSOperation">
+    <wsdl:documentation>Interface used to cancel a FlightInstance, Update FlightInstance delay and update FlightInstance gate</wsdl:documentation>
+  
+  	<wsdl:operation name="CancelFlightInstance">
+  	<wsdl:documentation>Operation for setting the status of a flight instance as "Cancelled"</wsdl:documentation>
+  		<wsdl:input message="tns:CancelFlightInstanceRequest"></wsdl:input>
+  		<wsdl:output message="tns:CancelFlightInstanceResponse"></wsdl:output>
+  		<wsdl:fault name="fault" message="tns:fdsError"></wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="UpdateDelay">
+  	<wsdl:documentation>Operation for updating the delay of a flight instance</wsdl:documentation>
+  		<wsdl:input message="tns:UpdateDelayRequest"></wsdl:input>
+  		<wsdl:output message="tns:UpdateDelayResponse"></wsdl:output>
+  		<wsdl:fault name="fault" message="tns:fdsError"></wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="UpdateGate">
+  	<wsdl:documentation>Operation for updating the gate of a flight instance</wsdl:documentation>
+  		<wsdl:input message="tns:UpdateGateRequest"></wsdl:input>
+  		<wsdl:output message="tns:UpdateGateResponse"></wsdl:output>
+  		<wsdl:fault name="fault" message="tns:fdsError"></wsdl:fault>
+  	</wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FDSCheckinSOAP" type="tns:FDSCheckin">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="CheckIn">
+  		<soap:operation
+  			soapAction="http://www.example.org/FDSControl/CheckIn" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FDSBoardSOAP" type="tns:FDSBoard">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="startBoard">
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="BoardPassenger">
+  		<soap:operation
+  			soapAction="http://www.example.org/FDSControl/BoardPassenger" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="getBoardedPassengers">
+  		<soap:operation
+  			soapAction="http://www.example.org/FDSControl/getBoardedPassengers" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FDSOperationSOAP" type="tns:FDSOperation">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="CancelFlightInstance">
+  		<soap:operation
+  			soapAction="http://www.example.org/FDSControl/CancelFlightInstance" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="UpdateDelay">
+  		<soap:operation
+  			soapAction="http://www.example.org/FDSControl/UpdateDelay" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="UpdateGate">
+  		<soap:operation
+  			soapAction="http://www.example.org/FDSControl/UpdateGate" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  </wsdl:binding>
+<wsdl:service name="FDSBoardService">
+  	<wsdl:port name="FDSBoardSOAP" binding="tns:FDSBoardSOAP">
+  		<soap:address location="http://localhost:7070/fdscontrol" />
+  	</wsdl:port>
+	</wsdl:service>
+  <wsdl:service name="FDSCheckinService">
+    <wsdl:port binding="tns:FDSCheckinSOAP" name="FDSCheckinSOAP">
+      <soap:address location="http://localhost:7070/FDSCheckin"/>
+    </wsdl:port>
+  </wsdl:service>
+  
+  
+  <wsdl:service name="FDSOperationService">
+  	<wsdl:port name="FDSOperationSOAP" binding="tns:FDSOperationSOAP">
+  		<soap:address location="http://localhost:7070/FDSOperation" />
+  	</wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

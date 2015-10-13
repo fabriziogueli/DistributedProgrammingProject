@@ -1,0 +1,35 @@
+The root element is FlightMonitor, the type of this element is FlightMonitorType.
+The ComplexType FlightMonitorType may contains a sequence of elements: Aircraft (Type: AircraftType), Flight (Type: FlightType) and FlightInstance (Type: FlightInstanceType).
+
+An AircraftType contains two elements: 
+1) Seat : a sequence of string that represent the seats available on the aircraft.
+2) Model : an ID Type attribute (required) that represent the model of the aircraft.
+
+A FlightType contains four attributes:
+
+1) DestinationAirport: an AirportType attribute (required) that represent the arrival airport code.
+2) DepartureAirport : an AirportType attribute (required) that represent the departure airport code.
+3) DepartureTime : a time attribute (required)
+4) Number : a NumberType attribute (required) that represent the number of the flight.
+
+The AirportType is a restriction of string type which constraints the string to be formed by three letters.
+
+The NumberType is a restriction of ID type which constraints the ID type to be formed by two letters and at most four digits.
+
+A FlightInstanceType contains a sequence of Passenger (Type: PassengerType) and six attributes:
+
+1)DepartureGate : a String that represent the departure gate assigned to this flight instance.
+2)Aircraft : an IDREF type that represent the Aircraft id which the flight instance refers to;
+3)Flight : an IDREF type that represent the Flight id which the flight instance refers to;
+4)Date : a Date type that represent the departure date for this flight instance.
+5)Delay : an integer type that represent the delay of this flight instance.
+6)Status : a StatusType element that represent the status of this flight instance.
+
+A StatusType  is  an enumeration with values: ARRIVED, BOARDING, BOOKING, CANCELLED, CHECKINGIN, DEPARTED
+A PassengerType contains three attributes:
+
+1)Name: a string that represent the passenger's name
+2)Seat: a string that represent the seat assigned to the passenger.
+3)Boarded: a boolean that tells if the passenger is already on-board.
+
+

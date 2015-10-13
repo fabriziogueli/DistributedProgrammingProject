@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pad.polito.it/fdsBoarding" xmlns:tns="http://pad.polito.it/fdsBoarding">
+
+    <element name="boarding" type="tns:boardingType"></element>
+    
+    <complexType name="boardingType">
+        <annotation>
+        	<documentation>The information of a boarding session</documentation>
+        </annotation>
+        <sequence>
+        	<element name="startBoarding" maxOccurs="1" minOccurs="0">
+                <annotation>
+                	<documentation>If this element is present, the client must start the boarding phase for the specified flight instance.
+								   If not present, the client will assume the flight instance is already in the boarding status.
+					</documentation>
+                </annotation>
+                <complexType></complexType>
+        	</element>
+        	<element name="passenger" type="string"
+        		maxOccurs="unbounded" minOccurs="0">
+        		<annotation>
+        			<documentation>
+        				The passengers to be boarded (in the specified
+        				order)
+        			</documentation>
+        		</annotation>
+        	</element>
+        </sequence>
+        <attribute name="endpoint" type="anyURI" use="required">
+    		<annotation>
+    			<documentation>The endpoint of the service to be contacted</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="flight" type="string" use="required">
+    		<annotation>
+    			<documentation>The flight number this information refers to</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="date" type="date" use="required">
+    		<annotation>
+    			<documentation>The date of the flight this information refers to</documentation>
+    		</annotation>
+    	</attribute>
+    </complexType>
+</schema>

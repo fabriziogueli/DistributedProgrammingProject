@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--  
+	Sample XML document with input information for FDSBoarding client
+	The client will board passengers for flight and date specified in the root element
+	The URL of the service is http://localhost:7070/fdscontrol
+	
+	If the data generator is set with seed 12343 and testcase 2,
+	the output flight list should be as in file boardList3.xml
+ -->
+<ns2:boarding xmlns:ns2="http://pad.polito.it/fdsBoarding" endpoint="http://localhost:7070/fdscontrol" flight="HC890" date="2010-02-15+01:00">
+    <startBoarding/>
+    <passenger>Elisabeth Di Crescenzo</passenger>
+    <passenger>Carlo Rossi</passenger>
+    <passenger>Clara Elkan</passenger>
+    <passenger>Giovanni Rossi</passenger>
+    <passenger>Sonia Del Santo</passenger>
+    <passenger>Marta Diana</passenger>
+    <passenger>Francesca Diana</passenger>
+    <passenger>Giuseppe Bianchi</passenger>
+    <passenger>Giovanni Piccoli</passenger>
+    <passenger>Paola Aziz</passenger>
+    <passenger>Elisabeth Servini</passenger>
+    <passenger>Clara Aziz</passenger>
+    <passenger>Giuseppe Aziz</passenger>
+    <passenger>Marco Rossi</passenger>
+    <passenger>Francesca Perissino</passenger>
+    <passenger>Ludovico Gonzales</passenger>
+    <passenger>Mario Turturro</passenger>
+</ns2:boarding>

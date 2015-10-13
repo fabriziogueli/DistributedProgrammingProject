@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="FDS-4" default="run-server" basedir=".">
+	<description>
+			Script for FDS Assignment 4
+	</description>
+
+	<!-- The lolcation of this assignment -->
+	<property name="lab4.location" location="." />
+
+	<!-- The random "FlightMonitorFactory" used for FDSInfo and for the server-->
+	<property name="FDSInfo.FlightMonitorFactory" value="it.polito.dp2.FDS.Random.FlightMonitorFactoryImpl" />
+
+	<!-- The default input filename passed to the client -->
+	<property name="input" location="${lab4.location}/PLEASE_SPECIFY_A_FILE" />
+	<!-- The default output filename passed to  the client -->
+	<property name="output" location="${lab4.location}/out.xml" />
+
+	<!-- The location to be used for class files -->
+	<property name="build.dir" location="${lab4.location}/build" />
+	<!-- The location for source files -->
+	<property name="src.dir" location="${lab4.location}/src" />
+	<!-- The location for jar files -->
+	<property name="lib.dir" location="${lab4.location}/lib" />
+
+	<!-- The ant file to be provided for client and server compilation -->
+	<property name="sol.build.file" value="sol_build.xml" />
+	<property name="sol.build.filepath" location="${lab4.location}/${sol.build.file}" />
+
+	<!-- The server and client classes -->
+	<property name="server.class" value="it.polito.dp2.FDS.sol4.server.FDSControlServer" />
+	<property name="client.class" value="it.polito.dp2.FDS.sol4.client.FDSControlClient" />
+
+	<property name="sol.zip" value="lab4.zip" />
+	<property name="debug" value="true" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.7" />
+	<property name="source" value="1.7" />
+
+	<!-- The classpath that includes only the FDS.jar -->
+	<path id="FDS.classpath">
+		<pathelement location="${lib.dir}/FDS.jar"/>
+	</path>
+
+	<path id="server.classpath">
+		<pathelement location="${lab4.location}/lib/FDS.jar" />
+		<pathelement location="${lab4.location}/lib/FDSRandom.jar" />
+		<pathelement path="${build.dir}" />
+	</path>
+
+	<path id="client.classpath">
+		<pathelement path="${build.dir}" />
+	</path>
+
+	<target name="setseed" unless="seed">
+		<tstamp>
+			<format property="seed" pattern="1HHmmss" />
+		</tstamp>
+	</target>
+
+	<target name="init">
+		<mkdir dir="${build.dir}" />
+	</target>
+
+	<!-- Target buildFDSInfo	-->
+	<target name="buildFDSInfo" depends="init">
+		<echo>Building FDSInfo (if needed)...</echo>
+		<javac 
+			destdir="${build.dir}"
+			debug="${debug}"
+			debuglevel="${debuglevel}"
+			source="${source}"
+			target="${target}"
+			includeantruntime="false">
+			<src path="${src.dir}" />
+			<include name="it/polito/dp2/FDS/lab1/FDSInfo.java" />
+			<classpath>
+				<path refid="FDS.classpath" />
+			</classpath>
+		</javac>
+		<echo>Done.</echo>
+	</target>
+
+	<!-- Target FDSInfo	-->
+	<target name="FDSInfo" depends="buildFDSInfo, setseed">
+		<java classname="it.polito.dp2.FDS.lab1.FDSInfo" failonerror="true" fork="yes">
+			<sysproperty key="it.polito.dp2.FDS.Random.seed" value="${seed}"/>
+			<sysproperty key="it.polito.dp2.FDS.Random.testcase" value="${testcase}"/>
+			<sysproperty key="it.polito.dp2.FDS.FlightMonitorFactory" value="${FDSInfo.FlightMonitorFactory}"/>
+			<classpath>
+				<path refid="FDS.classpath" />
+				<pathelement location="${lib.dir}/FDSRandom.jar"/>
+				<pathelement path="${build.dir}"/>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="build-server" depends="init">
+		<ant antfile="${sol.build.filepath}" target="build-server">
+			<property name="basedir" value="${lab4.location}" />
+		</ant>
+	</target>
+
+	<target name="build-client" depends="init">
+		<ant antfile="${sol.build.filepath}" target="build-client">
+			<property name="basedir" value="${lab4.location}" />
+		</ant>
+	</target>
+
+	<target name="run-server" depends="setseed, build-server">
+		<echo>Running server with seed: ${seed}</echo>
+		<java classname="${server.class}" failonerror="true" fork="yes">
+			<sysproperty key="it.polito.dp2.FDS.Random.seed" value="${seed}"/>
+			<sysproperty key="it.polito.dp2.FDS.Random.testcase" value="${testcase}"/>
+			<sysproperty key="it.polito.dp2.FDS.FlightMonitorFactory" value="${FDSInfo.FlightMonitorFactory}"/>
+			<classpath>
+				<path refid="server.classpath" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="run-client" depends="build-client">
+		<echo>Running client with input file: ${input}</echo>
+		<java classname="${client.class}" failonerror="true" fork="yes">
+			<arg path="${input}" />
+			<arg path="${output}" />
+			<classpath>
+				<path refid="client.classpath" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="run-check">
+		<java fork="yes" jar="lib/lab4.jar" dir=".">
+			<arg value="${file1}" />
+			<arg value="${file2}" />
+		</java>
+	</target>
+
+	<!-- target for cleaning -->
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+
+	<!--target for building the final zip containing the solution -->
+	<target name="make-final-zip">
+		<zip destfile="${sol.zip}" basedir="${lab4.location}" includes="${sol.build.file} wsdl/** custom/* src/it/polito/dp2/FDS/sol4/server/**/*.java src/it/polito/dp2/FDS/sol4/client/**/*.java" />
+	</target>
+</project>
